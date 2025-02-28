@@ -2,8 +2,8 @@
   "name": "@balancer/frontend-v2",
   "version": "1.145.0",
   "engines": {
-    "node": "=16",
-    "npm": ">=8"
+    "node": "=20",
+    "npm": ">=9"
   },
   "scripts": {
     "vite": "vite",
@@ -172,9 +172,6 @@
     "*.{js,ts,vue}": "eslint --cache --fix --max-warnings 0",
     "*.{md,json,yaml,html}": "prettier --write",
     "*.{css,vue}": "stylelint --fix"
-  },
-  "engines": {
-    "node": "22.x"
   },
   "license": "MIT",
   "repository": "balancer/frontend-v2"

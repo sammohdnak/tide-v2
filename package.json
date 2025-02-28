@@ -173,6 +173,9 @@
     "*.{md,json,yaml,html}": "prettier --write",
     "*.{css,vue}": "stylelint --fix"
   },
+  "engines": {
+    "node": "22.x"
+  },
   "license": "MIT",
   "repository": "balancer/frontend-v2"
 }

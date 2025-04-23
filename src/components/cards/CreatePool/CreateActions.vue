@@ -109,7 +109,7 @@ const amountsToApprove = props.amounts.map((amount, index) => {
 
 const explorerLink = computed((): string =>
   createState.receipt
-    ? explorerLinks.txLink(createState.receipt.transactionHash)
+    ? `${configService.env.VITE_IS_MAINNET?'https://otter.pulsechain.com/tx/':'https://scan.v4.testnet.pulsechain.com/#/tx/'}${createState.receipt.transactionHash}`
     : ''
 );
 

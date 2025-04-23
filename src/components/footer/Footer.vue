@@ -20,57 +20,66 @@ const { handleThirdPartyModalToggle } = useThirdPartyServices();
 const { openNpsModal } = useAppzi();
 
 const linkSections= [
-   
-   {
-     title: 'Product',
+{
+     title: 'PRODUCT',
      links: [
-       { label: 'Explore pools', href: '/pools' },
-       { label: 'Swap tokens', href: '/swap' },
-       { label: 'View portfolio', href: '/portfolio' },
-       { label: 'Get veTide', href: 'https://app.balancer.fi/#/veTide', isExternal: true },
-       {
-         label: 'Create an LBP',
-         href: 'https://www.fjordfoundry.com/?utm_source=balancer&utm_medium=website',
-         isExternal: true,
-       },
-       {
-         label: 'Create an NFT drop',
-         href: 'https://fjordnfts.com/?utm_source=balancer&utm_medium=website',
-         isExternal: true,
-       },
+       { label: 'Explore pools', href: `${configService.env.VITE_APP_MAIN_FE_URL}/pools`,isExternal: true },
+       { label: 'Swap tokens', href: `${configService.env.VITE_APP_MAIN_FE_URL}/swap`,isExternal: true },
+       { label: 'View portfolio', href: `${configService.env.VITE_APP_MAIN_FE_URL}/portfolio`,isExternal: true },
+       { label: 'Get veTide', href: `${networkSlug}/veTide`,  },
+       
      ],
    },
-   {
-     title: 'Resources',
-     links: [
-       { label: 'Forum', href: 'https://forum.balancer.fi', isExternal: true },
-       { label: 'Governance', href: 'https://vote.balancer.fi', isExternal: true },
-       {
-         label: 'Bug bounties',
-         href: 'https://immunefi.com/bug-bounty/balancer',
-         isExternal: true,
-       },
-       { label: 'Dune Analytics', href: 'https://dune.com/balancer', isExternal: true },
-       { label: 'Defilytica', href: 'https://balancer.defilytica.com', isExternal: true },
-       {
-         label: 'Brand assets',
-         href: 'https://github.com/balancer/brand-assets',
-         isExternal: true,
-       },
-     ],
-   },
+  //  {
+  //    title: 'Product',
+  //    links: [
+  //      { label: 'Explore pools', href: '/pools' },
+  //      { label: 'Swap tokens', href: '/swap' },
+  //      { label: 'View portfolio', href: '/portfolio' },
+  //      { label: 'Get veTide', href: 'https://app.balancer.fi/#/veTide', isExternal: true },
+  //      {
+  //        label: 'Create an LBP',
+  //        href: 'https://www.fjordfoundry.com/?utm_source=balancer&utm_medium=website',
+  //        isExternal: true,
+  //      },
+  //      {
+  //        label: 'Create an NFT drop',
+  //        href: 'https://fjordnfts.com/?utm_source=balancer&utm_medium=website',
+  //        isExternal: true,
+  //      },
+  //    ],
+  //  },
+  //  {
+  //    title: 'Resources',
+  //    links: [
+  //      { label: 'Forum', href: 'https://forum.balancer.fi', isExternal: true },
+  //      { label: 'Governance', href: 'https://vote.balancer.fi', isExternal: true },
+  //      {
+  //        label: 'Bug bounties',
+  //        href: 'https://immunefi.com/bug-bounty/balancer',
+  //        isExternal: true,
+  //      },
+  //      { label: 'Dune Analytics', href: 'https://dune.com/balancer', isExternal: true },
+  //      { label: 'Defilytica', href: 'https://balancer.defilytica.com', isExternal: true },
+  //      {
+  //        label: 'Brand assets',
+  //        href: 'https://github.com/balancer/brand-assets',
+  //        isExternal: true,
+  //      },
+  //    ],
+  //  },
 ]
  
 </script>
 
 <template>
   <footer v-once>
-    <div class="bg-footer-light dark:bg-footer-dark bg-no-repeat bg-cover">
+    <div class="bg-footer-light dark:bg-footer-dark bg-no-repeat bg-cover py-10">
     <div
       class="xl:container lg:px-4 xl:mx-auto dark:border-t dark:border-gray-800 "
     >
       <div
-        class="flex flex-col md:flex-row gap-8 md:justify-between py-12 px-4 lg:px-0 text-primary"
+        class="flex flex-col md:flex-row gap-8 md:justify-start py-12 px-4 lg:px-0 text-primary"
       >
         <div class="flex flex-col gap-8">
           <div class="flex flex-col gap-2">
@@ -90,91 +99,52 @@ const linkSections= [
       
         </div>
 
-        <div class="flex gap-8">
-          <div class="flex flex-col gap-4">
-            <p class="font-medium">Product</p>
+        <div class="flex gap-4">
+          <div class="flex flex-col gap-3">
+            <p class="font-medium text-sm" >PRODUCT</p>
             <a :href="`${configService.env.VITE_APP_MAIN_FE_URL}/pools`" 
          target="_self"
-          class="font-medium link"
+          class="font-medium link text-sm"
          >
-        Overview
+        Explore Pools
         </a>
-        <a :href="`${configService.env.VITE_APP_MAIN_FE_URL}/pools`" 
+        <a :href="`${configService.env.VITE_APP_MAIN_FE_URL}/swap`" 
          target="_self"
-          class="font-medium link"
+          class="font-medium link text-sm"
          >
-        Features
+        Swap Tokens
         </a>
-        <a :href="`${configService.env.VITE_APP_MAIN_FE_URL}/pools`" 
+      
+        <a :href="`${configService.env.VITE_APP_MAIN_FE_URL}/portfolio`" 
          target="_self"
-          class="font-medium link"
+          class="font-medium link text-sm"
          >
-        Solutions
+        View Portfolio
         </a>
-        <a :href="`${configService.env.VITE_APP_MAIN_FE_URL}/pools`" 
+
+        <a :href="`#/${networkSlug}/veTide`" 
          target="_self"
-          class="font-medium link"
+          class="font-medium link text-sm"
          >
-        Tutorials
+       veTIDE
         </a>
-        <a :href="`${configService.env.VITE_APP_MAIN_FE_URL}/pools`" 
-         target="_self"
-          class="font-medium link"
-         >
-        Pricing
-        </a>
-        <a :href="`${configService.env.VITE_APP_MAIN_FE_URL}/pools`" 
-         target="_self"
-          class="font-medium link"
-         >
-        Releases
-        </a>
+        
+        
+        
+        
        
           </div>
 
-          <div class="flex flex-col gap-4">
-            <p class="font-medium">Resources</p>
-            <a :href="`${configService.env.VITE_APP_MAIN_FE_URL}/pools`" 
-         target="_self"
-          class="font-medium link"
-         >
-        Blog
-        </a>
-        <a :href="`${configService.env.VITE_APP_MAIN_FE_URL}/pools`" 
-         target="_self"
-          class="font-medium link"
-         >
-        Newsletter
-        </a>
-        <a :href="`${configService.env.VITE_APP_MAIN_FE_URL}/pools`" 
-         target="_self"
-          class="font-medium link"
-         >
-        Events
-        </a>
-        <a :href="`${configService.env.VITE_APP_MAIN_FE_URL}/pools`" 
-         target="_self"
-          class="font-medium link"
-         >
-        Help Center
-        </a>
-        <a :href="`${configService.env.VITE_APP_MAIN_FE_URL}/pools`" 
-         target="_self"
-          class="font-medium link"
-         >
-        Tutorials
-        </a>
-        <a :href="`${configService.env.VITE_APP_MAIN_FE_URL}/pools`" 
-         target="_self"
-          class="font-medium link"
-         >
-        Support
-        </a>
+         
        
-          </div>
+        
+        
+        
+       
+          
         </div>
       
-        <div class="flex flex-col gap-4">
+        <!-- <div class="flex flex-col gap-4">
           <p>Stay upto date</p>
           <div class="flex items-center gap-4">
             <input
@@ -187,7 +157,7 @@ const linkSections= [
               Subscribe
             </BalBtn>
           </div>
-        </div>
+        </div> -->
       </div>
     </div></div>
   </footer>

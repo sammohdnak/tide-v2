@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
+import AppNav from '../navs/AppNav/AppNav.vue';
 
 /**
  * TYPES
@@ -38,7 +39,9 @@ const centerClasses = computed(() => ({
 </script>
 
 <template>
+
   <div class="layout-container">
+    
     <div :class="['gutter-col', gutterClasses]">
       <slot name="gutterLeft" />
     </div>

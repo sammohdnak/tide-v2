@@ -1045,8 +1045,8 @@
         "veBAL": "veTIDE"
       },
       "tokenInfo": {
-        "balWETH": "Add liquidity to the 80% BAL / 20% WETH pool to get the B-80BAL-20WETH LP token.",
-        "lpToken": "Lock up the LP tokens from the 80% BAL / 20% WETH pool for up to a year to get veTIDE. The longer you lock, the more veTIDE you get.",
+        "balWETH": "Add liquidity to the 80% BAL / 20% WPLS pool to get the B-80BAL-20WETH LP token.",
+        "lpToken": "Lock up the LP tokens from the 80% BAL / 20% WPLS pool for up to a year to get veTIDE. The longer you lock, the more veTIDE you get.",
         "veBAL": "Use veTIDE to earn extra on your staked pools. Only some pools are eligible for staking. Check any pools that you are in, and stake it to earn liquidity mining incentives. You can also use veTIDE to vote to direct future liquidity mining emissions"
       },
       "buttons": {

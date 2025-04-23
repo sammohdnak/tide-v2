@@ -1,6 +1,6 @@
 import { AprBreakdown, Pool } from '@balancer-labs/sdk';
 
-// BAL 80% WETH 20% is the default pool used in builders
+// BAL 80% WPLS 20% is the default pool used in builders
 export const defaultSdkPool = {
   id: '0x45a0623ab66f985effc1c69d05f1af4badb01b00000200000000001230000060',
   name: '25DAI-25WETH-25USDC-25BAL',

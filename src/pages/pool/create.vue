@@ -235,7 +235,8 @@ const handleToggle = () => {
 
 <template>
   <div>
-    <Col3Layout offsetGutters mobileHideGutters class="mt-8">
+    <Col3Layout offsetGutters mobileHideGutters class="mt-8"
+    >
       <template #gutterLeft>
         <div v-if="!upToLargeBreakpoint" class="col-span-3">
           <BalStack vertical>

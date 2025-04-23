@@ -3,6 +3,7 @@ import useAlerts from '@/composables/useAlerts';
 import { useReturnRoute } from '@/composables/useReturnRoute';
 import AppNavAlert from '@/components/navs/AppNav/AppNavAlert.vue';
 import { isFakeModal } from '@/composables/useFakeModal';
+import AppNav from '../navs/AppNav/AppNav.vue';
 
 const { getReturnRoute } = useReturnRoute();
 const { currentAlert } = useAlerts();
@@ -10,12 +11,13 @@ const { currentAlert } = useAlerts();
 <template>
   <AppNavAlert v-if="currentAlert" :alert="currentAlert" />
   <div class="pb-16">
+    <AppNav />
     <div class="h-screen" :class="{ 'bg-gray-850': isFakeModal }">
       <div class="mb-12 layout-header">
         <div />
-        <BalBtn tag="router-link" :to="getReturnRoute()" color="white" circle>
+        <!-- <BalBtn tag="router-link" :to="getReturnRoute()" color="white" circle>
           <BalIcon name="x" size="lg" />
-        </BalBtn>
+        </BalBtn> -->
       </div>
       <slot />
     </div>

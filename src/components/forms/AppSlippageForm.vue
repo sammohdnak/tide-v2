@@ -56,9 +56,24 @@ function onFixedInput(val: string): void {
   setSlippage(val);
 }
 
+// function onCustomInput(val: string): void {
+//   if (!val) return;
+//   state.isCustomInput = true;
+//   val = bnum(val).div(100).toString();
+//   setSlippage(val);
+// }
+
 function onCustomInput(val: string): void {
   if (!val) return;
   state.isCustomInput = true;
+  
+  // Add maximum slippage check (for example, max 50%)
+  const numVal = Number(val);
+  if (numVal > 100) {
+    val = '100';
+    state.customSlippage = '100';
+  }
+  
   val = bnum(val).div(100).toString();
   setSlippage(val);
 }

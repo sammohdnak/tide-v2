@@ -74,7 +74,7 @@ const cards = computed(() => {
   return [
     {
       id: 'unlockedVeBAL',
-      label: 'Unlocked ve8020 TIDE/WETH',
+      label: 'Unlocked ve8020 TIDE/WPLS',
       icon: unlock,
       iconBgColor: 'bg-blue-100',
       value: fNum(bptBalance.value, FNumFormats.token),
@@ -82,7 +82,7 @@ const cards = computed(() => {
     },
     {
       id: 'lockedVeBAL',
-      label: 'Locked ve8020 TIDE/WETH',
+      label: 'Locked ve8020 TIDE/WPLS',
       icon: lock,
       iconBgColor: 'bg-blue-50',
       value: fNum(props.veBalLockInfo?.lockedAmount ?? '0', FNumFormats.token),

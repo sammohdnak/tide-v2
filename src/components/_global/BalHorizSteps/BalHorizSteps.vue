@@ -71,9 +71,14 @@ function stateClasses(state: StepState): string {
             <BalIcon v-if="step.state === stepState.Success" name="check" />
             <img
               v-else-if="step.state === stepState.WalletOpen"
-              :src="walletLogo"
+               src="~@/assets/images/icons/networks/pulsechain.svg"
               class="w-4 h-4"
             />
+            <!-- <img
+                  src="~@/assets/images/icons/networks/avalanche-light.svg"
+                  width="24"
+                  class="mr-1.5"
+                /> -->
             <template v-else-if="step.state === stepState.Pending">
               <span
                 class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"

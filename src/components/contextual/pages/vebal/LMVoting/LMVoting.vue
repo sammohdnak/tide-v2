@@ -182,7 +182,7 @@ watch(account, (_, prevAccount) => {
       v-if="noVeBalBalance && !isLoading"
       title="You need some veTIDE to vote on gauges"
     >
-      Get veTIDE by locking up LP tokens from the 80% BAL / 20% WETH pool.
+      Get veTIDE by locking up LP tokens from the 80% BAL / 20% WPLS pool.
     </VotingAlert>
 
     <VotingAlert

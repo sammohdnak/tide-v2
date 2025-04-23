@@ -94,12 +94,12 @@ function copyAddress() {
         </div>
       </div>
       <div class="flex mt-1 mb-1">
-        <div class="flex">
+        <div class="flex items-center">
           <div class="relative">
             <Avatar :iconURI="avatarUri" :address="account" :size="44" />
             <div class="connector-icon-wrapper">
               <img
-                :src="connectorLogo"
+                src="~@/assets/images/icons/networks/pulsechain.svg"
                 class="flex absolute right-0 bottom-0 justify-center items-center p-0.5 w-5 h-5 bg-white rounded-full"
               />
             </div>
@@ -150,9 +150,9 @@ function copyAddress() {
                 </BalBtn>
               </div>
             </div>
-            <div class="text-sm">
+            <!-- <div class="text-sm">
               {{ connectorName }}
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

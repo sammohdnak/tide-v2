@@ -40,7 +40,7 @@ const {
   totalLiquidity,
   hasUnlistedToken,
   isUnlistedToken,
-  isWeightedPool
+  isWeightedPool,
 } = usePoolCreation();
 const { upToLargeBreakpoint } = useBreakpoints();
 const { fNum } = useNumbers();
@@ -447,12 +447,12 @@ function onAlertMountChange() {
             <BalStack vertical spacing="xs">
               <span class="mt-2"
                 >{{ $t('unlistedTokenWarning') }}
-                <a
+                <!-- <a
                   href="https://github.com/balancer/frontend-v2/wiki/How-tos#add-tokens-to-tokenlist"
                   target="_blank"
                   class="underline"
                   >{{ $t('here') }}</a
-                >.
+                >. -->
               </span>
             </BalStack>
           </BalAlert>

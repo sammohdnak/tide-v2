@@ -34,7 +34,7 @@ const config: Config = {
     ],
     aave: '',
     gauge:
-      'https://nhailbiqw4.execute-api.us-east-2.amazonaws.com/subgraphs/name/sammohdnak/tide-gauges-1',
+      'https://subgraph-tide.nambitech.com/subgraphs/name/sammohdnak/tide-gauges-1',
     blocks: '',
   },
   bridgeUrl: '',

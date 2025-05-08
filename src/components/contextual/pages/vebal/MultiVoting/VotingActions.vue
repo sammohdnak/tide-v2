@@ -23,7 +23,7 @@ const { handleFailed, handleSuccess, txState, votingActions } =
     />
     <div v-else>
       <ConfirmationIndicator :txReceipt="txState.receipt" />
- <!-- //TODO change to pulsechain Later -->
+      <!-- //TODO change to pulsechain Later -->
       <BalBtn
         tag="router-link"
         :to="{
@@ -35,7 +35,7 @@ const { handleFailed, handleSuccess, txState, votingActions } =
         block
         class="mt-2"
       >
-        Return to veBAL list
+        Return to veTIDE list
       </BalBtn>
     </div>
   </transition>

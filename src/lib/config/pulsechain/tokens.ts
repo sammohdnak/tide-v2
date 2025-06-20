@@ -10,9 +10,9 @@ const tokens: TokenConstants = {
   },
   Addresses: {
     nativeAsset: '0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE',
-    wNativeAsset: '0x7b79995e5f793A07Bc00c21412e50Ecae098E7f9',
-    WETH: '0x7b79995e5f793A07Bc00c21412e50Ecae098E7f9',
-    BAL: '0xe0B60AEe4F5AB81c04766147Ccb5713D57dCEf05',
+    wNativeAsset: '0x02DcdD04e3F455D838cd1249292C58f3B79e3C3C',
+    WETH: '0x02DcdD04e3F455D838cd1249292C58f3B79e3C3C',
+    BAL: '0xdedBCc8D9458B2556375680FbA297C6aCa6c7DCf',
     bbaUSD: '',
     bbaUSDv2: '',
     rETH: '',

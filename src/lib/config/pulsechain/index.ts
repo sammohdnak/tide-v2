@@ -30,11 +30,10 @@ const config: Config = {
   subgraphs: {
     main: [
       // 'https://api.studio.thegraph.com/query/24660/balancer-sepolia-v2/version/latest',
-      'http://localhost:4000/graphql',
+      'https://www.tide-main-backend.com/graphql',
     ],
     aave: '',
-    gauge:
-      'https://api.studio.thegraph.com/query/51820/tide-gauges/version/latest',
+    gauge: 'https://tide-main-sub.com/subgraphs/name/tide/tide-gauges-1',
     blocks: '',
   },
   bridgeUrl: '',

@@ -1,25 +1,58 @@
 {
-  "https://raw.githubusercontent.com/balancer/tokenlists/main/generated/balancer.tokenlist.json": {
-    "name": "Tide",
-    "version": {
-      "major": 1,
-      "minor": 0,
-      "patch": 0
+  "name": "Tide",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "keywords": [
+    "Tide",
+    "DeFi",
+    "DEX",
+    "AMM",
+    "Exchange",
+    "Liquidity",
+    "Pool",
+    "Token",
+    "Swap"
+  ],
+  "logoURI": "https://raw.githubusercontent.com/balancer/pebbles/master/images/pebbles-pad.256w.png",
+  "timestamp": "2024-09-09T15:32:22.216Z",
+  "tokens": [
+    {
+      "chainId": 369,
+      "address": "0xA1077a294dDE1B09bB078844df40758a5D0f9a27",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/64x64/24735.png",
+      "name": "Wrapped PLS",
+      "symbol": "WPLS",
+      "decimals": 18,
+      "extensions": {
+        "coingeckoId": "pulsechain"
+      }
     },
-    "keywords": [
-      "Tide",
-      "DeFi",
-      "DEX",
-      "AMM",
-      "Exchange",
-      "Liquidity",
-      "Pool",
-      "Token",
-      "Swap"
-    ],
-    "logoURI": "https://raw.githubusercontent.com/balancer/pebbles/master/images/pebbles-pad.256w.png",
-    "timestamp": "2024-09-09T15:32:22.216Z",
-    "tokens": [
+
+    {
+      "chainId": 369,
+      "address": "0x600136dA8cc6D1Ea07449514604dc4ab7098dB82",
+      "name": "CST",
+      "symbol": "CST",
+      "decimals": 6,
+      "logoURI": "",
+      "extensions": {
+        "coingeckoId": "balancer"
+      }
+    },
+    {
+      "chainId": 369,
+      "address": "0xdedBCc8D9458B2556375680FbA297C6aCa6c7DCf",
+      "logoURI": "https://raw.githubusercontent.com/sammohdnak/tide-lists-v2/refs/heads/main/tide-logo.png",
+      "name": "TIDE Governance Token",
+      "symbol": "TIDE",
+      "decimals": 18,
+      "extensions": {
+        "coingeckoId": "balancer"
+      }
+    },
     {
       "chainId": 943,
       "address": "0xc5393473860aadeffe619c863A54423fA01Ef443",
@@ -243,5 +276,4 @@
       }
     }
   ]
-  }
 }

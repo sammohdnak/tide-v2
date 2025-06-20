@@ -20,10 +20,10 @@ const urlNetworkId: Network | null = routeSlug
   ? networkFromSlug(routeSlug)
   : null;
 
-const NETWORK_ID =
+const NETWORK_ID = 369
   // urlNetworkId ||
   // localStorageNetworkId ||
-  Number(import.meta.env.VITE_NETWORK) as Network;
+  // Number(import.meta.env.VITE_NETWORK) as Network;
 // ||
 // Network.MAINNET;
 if (windowAvailable) localStorage.setItem('networkId', NETWORK_ID.toString());
@@ -133,7 +133,7 @@ export function handleNetworkSlug(
 ) {
   const networkFromUrl = networkFromSlug(networkSlug);
   const localStorageNetwork = networkFor(
-    localStorage.getItem('networkId') ?? '1'
+    localStorage.getItem('networkId') ?? '369'
   );
   if (!networkFromUrl) {
     // missing or incorrect network name -> next() withtout network change

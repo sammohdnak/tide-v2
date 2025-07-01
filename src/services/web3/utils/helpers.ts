@@ -6,6 +6,7 @@ import { WalletError } from '@/types';
 export async function switchToAppNetwork(provider: ExternalProvider) {
   const appNetworkConfig = configService.network;
   const hexChainId = `0x${appNetworkConfig.chainId.toString(16)}`;
+
   try {
     if (provider.request) {
       await provider.request({
@@ -22,7 +23,7 @@ export async function switchToAppNetwork(provider: ExternalProvider) {
       return false;
     }
     // chain does not exist, let's add it
-    if (error.code === 4902) {
+    if (error.code === 4902 || error.code === -32603) {
       return importNetworkDetailsToWallet(provider);
     }
   }
@@ -41,7 +42,7 @@ export async function importNetworkDetailsToWallet(provider: ExternalProvider) {
         {
           chainId: hexChainId,
           chainName: appNetworkConfig.name,
-          rpcUrls: [appNetworkConfig.publicRpc],
+          rpcUrls: [appNetworkConfig.rpc],
           iconUrls: [appNetworkConfig.nativeAsset.logoURI],
           nativeCurrency: {
             name: appNetworkConfig.nativeAsset.name,

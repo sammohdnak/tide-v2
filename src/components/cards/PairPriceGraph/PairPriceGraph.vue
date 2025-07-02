@@ -233,7 +233,7 @@ const chartGrid = computed(() => {
           <h6 class="font-medium">{{ outputSym }}/{{ inputSym }}</h6>
           <BalTooltip class="ml-2" :text="$t('coingeckoPricingTooltip')">
             <template #activator>
-              <img class="h-5" src="@/assets/images/icons/coingecko.svg" />
+              <img class="h-5" src="@/assets/images/icons/moralis.png" />
             </template>
           </BalTooltip>
         </div>

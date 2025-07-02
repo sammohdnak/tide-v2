@@ -170,7 +170,7 @@
   "clearForms": "Clear forms",
   "clearTransactions": "Clear transactions",
   "close": "Close",
-  "coingeckoPricingTooltip": "The data for this graph is pulled from our pricing provider, CoinGecko.",
+  "coingeckoPricingTooltip": "The data for this graph is pulled from our pricing provider, Moralis.",
   "communitySwapFeeLabel": "Delegated swap fees; currently fixed: <span class='font-semibold'>{0}</span>",
   "composition": "Composition",
   "composableStablePool": "Composable Stable Pool",

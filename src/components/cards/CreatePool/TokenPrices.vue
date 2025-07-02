@@ -3,7 +3,7 @@ import usePoolCreation from '@/composables/pools/usePoolCreation';
 import useBreakpoints from '@/composables/useBreakpoints';
 import useNumbers, { FNumFormats } from '@/composables/useNumbers';
 import { useTokens } from '@/providers/tokens.provider';
-import coingecko from '@/assets/images/icons/coingecko.svg';
+import coingecko from '@/assets/images/icons/moralis.png';
 import { selectByAddress } from '@/lib/utils';
 
 type Props = {

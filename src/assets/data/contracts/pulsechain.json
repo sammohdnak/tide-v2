@@ -19,7 +19,7 @@
   "ExternalWeightedMath": "0x8246e571d88ACd1346179Cc3641DE87Fe3544d7A",
   "FeeDistributor": "0xA6971317Fb06c76Ef731601C64433a4846fCa707",
   "GaugeAdder": "0x56e5E829a9467d0B443345f2fD953f2F1b3Cffff",
-  "GaugeController": "0x1FBDbA6713ec5f5755Cde125a9509152324f1706",
+  "GaugeController": "0xDb75e1A64EF67273c5d366C13A0D2F0D7F903F32",
   "GearboxLinearPoolFactory": "0x8df317a729fcaA260306d7de28888932cb579b88",
   "L2BalancerPseudoMinter": "0xb51f7fFc97CeDFb6922e8B9Bbf3eF7575fafD630",
   "L2LayerZeroBridgeForwarder": "0xc7E5ED1054A24Ef31D827E6F86caA58B3Bc168d7",
@@ -65,9 +65,9 @@
   "Permit2": "0xa0E293567a37F3de1c1C6Fc98d3C58b7652b309E",
 
   "VeBoostV2": "0x927906bbAc747c13c75F6447FE8abb490EAB456C",
-  "VotingEscrow": "0x55A30697aCf45778A2CAF66bDd8306Cf8c6a0985",
-  "VotingEscrowDelegation": "0x61595ae62094725C03793f401791146f5f288203",
-  "VotingEscrowDelegationProxy": "0xCde90483cABFdd9Cf59d4afBc810eE2a7dD1e073",
+  "VotingEscrow": "0x013d14A7Fd6569CC97F84393ab5DC877d7536675",
+  "VotingEscrowDelegation": "0xecA6b85eEb070673d6C2f653BBc6d34A4066e0Aa",
+  "VotingEscrowDelegationProxy": "0x7Ff1e57fF900f3704F31fC540494eD4A2eC84C65",
   "WeightedPoolFactory": "0xBf0d1D6ff9F97663F31D675bFd6Cbd2E96FEe9ca",
   "YearnLinearPoolFactory": "0xAcf05BE5134d64d150d153818F8C67EE36996650"
 }

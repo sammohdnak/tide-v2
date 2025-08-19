@@ -33,7 +33,8 @@ const config: Config = {
       'https://www.tide-main-backend.com/graphql',
     ],
     aave: '',
-    gauge: 'https://tide-main-sub.com/subgraphs/name/tide/tide-gauges-1',
+    gauge:
+      'https://api.goldsky.com/api/public/project_cm2a93wnsf5i101ur1vsxglxv/subgraphs/tide-gauges-1/0.0.1/gn',
     blocks: '',
   },
   bridgeUrl: '',

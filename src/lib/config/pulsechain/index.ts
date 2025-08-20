@@ -34,7 +34,7 @@ const config: Config = {
     ],
     aave: '',
     gauge:
-      'https://api.goldsky.com/api/public/project_cm2a93wnsf5i101ur1vsxglxv/subgraphs/tide-gauges-1/0.0.1/gn',
+      'https://api.goldsky.com/api/public/project_cmek3nm9soqrp01v487ry6jzs/subgraphs/tide-gauges-1/0.0.1/gn',
     blocks: '',
   },
   bridgeUrl: '',
